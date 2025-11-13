@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "cppbuild",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "C:/Users/KIIT/Desktop/Projects/Gravity Simulator/src/gravity_sim_3Dgrid.cpp",
+                "-o",
+                "C:/Users/KIIT/Desktop/Projects/Gravity Simulator/src/gravity_sim_3Dgrid.exe",
+                "-I",
+                "C:/msys64/mingw64/include",
+                "-L",
+                "C:/msys64/mingw64/lib",
+                "-lglew32",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32"
+            ],
+            "options": {
+                "cwd": "C:/Users/KIIT/Desktop/Projects/Gravity Simulator"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "compiler: C:/msys64/mingw64/bin/g++.exe"
+        },
+        {
+            "label": "build_solar",
+            "type": "cppbuild",
+            "command": "C:/msys64/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "C:/Users/KIIT/Desktop/Projects/Gravity Simulator/src/solar_system_nbody.cpp",
+                "-o",
+                "C:/Users/KIIT/Desktop/Projects/Gravity Simulator/src/solar_system_nbody.exe",
+                "-I",
+                "C:/msys64/mingw64/include",
+                "-L",
+                "C:/msys64/mingw64/lib",
+                "-lglew32",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32"
+            ],
+            "options": {
+                "cwd": "C:/Users/KIIT/Desktop/Projects/Gravity Simulator"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+            "detail": "Build solar system simulation"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Gravity Simulator",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Users/KIIT/Desktop/Projects/Gravity Simulator/src/gravity_sim_3Dgrid.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "C:/Users/KIIT/Desktop/Projects/Gravity Simulator",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build",
+            "logging": {
+                "moduleLoad": true,
+                "trace": true,
+                "engineLogging": true,
+                "programOutput": true,
+                "exceptions": true
+            }
+        }
+    ]
+}
